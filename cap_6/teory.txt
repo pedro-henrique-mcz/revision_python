@@ -1,0 +1,20 @@
+1. O que é um "par chave-valor"? Se você tem um dicionário carro = {'cor': 'vermelho', 'ano': 2020}, qual é a chave e qual é o valor no primeiro par?
+
+"par chave-valor" é em referência em como a estrutura de dados é feita com uma chave atrelada a um valor, uma etiqueta grampeada em um produto. chave = cor, valor = vermelho.
+
+2. Qual é a sintaxe para acessar o valor associado à chave 'ano' no dicionário carro? E qual seria a sintaxe para adicionar um novo par chave-valor, como 'modelo': 'mustang', a esse mesmo dicionário?
+
+carro['ano'], carro['modelo'] = 'mustang'
+
+3. O capítulo apresenta três métodos para percorrer um dicionário: .items(), .keys() e .values(). Descreva o que cada um desses métodos permite acessar quando usado em um laço for.
+
+.items() = lista dos pares chave-valor do dicionario, .keys() = lista das chaves do dicionario, .values() = lista de valores.
+
+4. Descreva uma situação em que seria útil aninhar uma lista dentro de um dicionário. Dê um exemplo simples de como essa estrutura de dados seria declarada em Python (por exemplo, uma pizza com uma lista de ingredientes).
+
+Uma livraria serve bem, cada categoria tem uma lista de livros que tambem podem ser dicionarios.
+(Observação: Ótimo exemplo conceitual! Faltou apenas o exemplo de código, como livraria = {'Ficção': ['Duna', 'Neuromancer']}).
+
+5. Como você removeria permanentemente o par chave-valor com a chave 'ano' do dicionário carro?
+
+del carro['ano']
