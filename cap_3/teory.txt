@@ -1,0 +1,22 @@
+1. Em Python, como os índices de uma lista são contados? Se você tem uma lista nomes = ['ana', 'bruno', 'carla'], qual código você usaria para acessar o primeiro elemento ('ana') e o último elemento ('carla')?
+
+São contados comumente como arrays de outras linguagens, uma lista ordenada que vai do 0 até o ultimo itme. nomes[0], nomes[len(nomes)-1]
+(Observação: Resposta perfeita. O Python também oferece uma sintaxe especial para o último item: nomes[-1].)
+
+2. Qual é a diferença entre o método .append() e o método .insert() ao adicionar um novo elemento a uma lista?
+
+append adiciona ao final, insert adiciona em uma posição específica.
+
+3. O capítulo apresenta três maneiras de remover itens de uma lista: a instrução del, o método .pop() e o método .remove(). Descreva uma situação em que você escolheria usar .pop() em vez da instrução del.
+
+A função pop() remove o ultimo item da lista e o devolve como retorno, podemos armazenar caso quisessemos o dado, já a função del remove permanentemente sem deixar rastros.
+
+4. Explique a diferença fundamental entre o método .sort() e a função sorted(). Qual deles modifica a lista original permanentemente?
+
+O método sort() modifica o dado permanentemente, já o método sorted retorna uma copia modificada do dado.
+
+5. O que é um IndexError (erro de índice)? Dê um exemplo de um código simples que causaria esse tipo de erro em uma lista que contém apenas três itens.
+
+IndexError é quando referenciamos uma posição inexistente em uma lista.
+ana = [1,2,3]
+third = ana[3]
