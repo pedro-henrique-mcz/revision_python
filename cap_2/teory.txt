@@ -1,0 +1,21 @@
+1. O livro apresenta regras importantes sobre como nomear variáveis para evitar erros. Por exemplo, por que mensagem_1 é um nome de variável válido, mas 1_mensagem não é? Que tipo de erro (Error) o Python geralmente apresenta quando você tenta usar uma variável que foi escrita com um erro de ortografia (por exemplo, mesage em vez de message)?
+
+A sintaxe do Python não permite variável nomeadas com números ao inicio, NotDeclared
+(Observação: A primeira parte está correta. O erro específico para uma variável com nome errado é NameError.)
+
+2. Explique a diferença entre os três métodos de string a seguir: .title(), .upper() e .lower().
+
+.title() = Coloca em caixa alta cada primeira letra de uma palavra de uma string. .upper() coloca toda a string em caixa alta. .lower() coloca toda a string em caixa baixa.
+
+3. O que são "espaços em branco" (whitespace) em programação? Descreva como você adicionaria uma quebra de linha (newline) e uma tabulação (tab) a uma string em Python.
+
+Espaço em branco é o espaço de código que nós usamos normalmente para identação, são espaços que são irrelevantes ao interpretador, mas que para nós apresentam estruturação. Quebra de linha se da por \n e tabulação por \t
+(Observação: Ótima explicação para \n e \t. A pergunta também incluía os métodos para remover espaços, como o .strip().)
+
+4. Imagine que você quer exibir uma mensagem que inclui a idade de uma pessoa, armazenada em uma variável idade = 29. Por que o código print("A idade é: " + idade) causaria um TypeError? Como você corrigiria esse código usando a função str()?
+
+Type erro sobe por diversas maneiras, mas a mais comum [e quando tentamos fazer uma operação ou expressão com tipos incompatíveis, no caso do exemplo, quando usamos o sinal de soma em uma expressão que tem uma string envolvida o que acontece é que o python interpreta aquilo como uma concatenação de strings e espera que todos os envolvidos na expressão sejam string, como idade é um int, o erro sobe. A correção se dá por uma convesão de tipo com a função str(idade).
+
+5. Como você escreve um comentário em um código Python? Qual é o principal objetivo de escrever comentários em seus programas, de acordo com o livro?
+
+Com #, comentários são importantes para deixarmos registrado como nosso código funciona para nós mesmo e para coelgas que irão trabalhar com ele, é um guia particalar para o código.
