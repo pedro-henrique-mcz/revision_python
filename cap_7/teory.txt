@@ -1,0 +1,20 @@
+1. A função input() sempre trata a entrada do usuário como que tipo de dado? Se você pedir a idade de um usuário com idade = input('Qual sua idade? ') e depois tentar fazer a comparação if idade >= 18:, que tipo de erro (Error) provavelmente ocorrerá e por quê?
+
+ValueError porque estamos tentando fazer uma operção booleana de comparação com tipos distintos. Input retorn uma string e dentro de if idade >= 18: a comparação iria subir um erro.
+(Observação: Raciocínio perfeito! O erro específico nesse caso seria um TypeError por comparar tipos incompatíveis.)
+
+2. Qual é a principal diferença entre um laço for e um laço while? Descreva uma situação em que um laço while seria mais apropriado do que um laço for.
+
+For são laços que normalmente são utilizados para iterarem sobre listas, tuplas e dicionários. While por outro lado são normalmente utilizados em programas iterativos e em ciclos que devem rodar durante todo o programa.
+
+3. O capítulo descreve três maneiras de controlar a execução de um laço while: usar um valor de saída (como 'quit'), usar uma flag, e usar a instrução break. Explique brevemente o que é uma flag e como ela funciona para controlar um laço.
+
+Uma flag e um valor True e que normalmente controla o laço para n colocarmos inumeros breaks no laco, funciona como um controle central de parada que vai receber False caso algo aconteca.
+
+4. Qual é a diferença de comportamento entre as instruções break e continue quando usadas dentro de um laço?
+
+break para o laço, e continue pula uma interação.
+
+5. Por que o livro recomenda usar um laço while (em vez de um laço for) para modificar uma lista enquanto você a percorre, como no exemplo de mover usuários de uma lista de não confirmados para uma de confirmados?
+
+Porque o laço for apresenta a particularidade de seu contador ser interno, caso modifiquemos uma lista, o contador interno do for se perder e nem todos os items sao iterados, while n pass apor isso por temos controle de suas iterações.
