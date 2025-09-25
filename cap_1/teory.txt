@@ -1,0 +1,25 @@
+1. Qual é a finalidade da extensão de arquivo .py? O que ela indica para o seu editor de texto e para o sistema?
+
+A extensão ou sufixo py indica que o arquivo contem um modulo python e que deve ser interpretado pelo interpretador python.
+
+2. O livro discute duas versões principais do Python. Qual versão é recomendada para novos programadores e por que é importante estar ciente das diferenças entre as versões?
+
+A partir da 3.3 e a não recomendada é a 2.7 por ter menos recursos e estar caindo em desuso.
+
+3. Qual é a diferença entre executar um trecho de código diretamente no interpretador Python (na sessão de terminal com >>>) e executar um programa completo salvo em um arquivo .py?
+
+Não me recordo, me explique depois.
+
+4. Se o seu programa meu_script.py está salvo em uma pasta chamada python_work na sua Área de Trabalho (Desktop), quais comandos você usaria no terminal para navegar até essa pasta e executar o programa?
+
+daria CD ate a a pasta python_work e e usuaria o comando py meu_script.py
+
+
+(Observação: Resposta quase perfeita! O livro ensina a usar o comando python meu_script.py. O comando 
+
+
+py também funciona em alguns sistemas Windows, mas python é o padrão ensinado no livro.)
+
+5. Quando um programa Python não executa corretamente por causa de um erro, o que é um traceback e por que ele é útil para resolver o problema?
+
+Traceback são a maneira que o interpretador python tem de te devolver erros para serem analisados, trace backs devolvem o arquivo do erro, a linha do erro e o tipo do erro, pode acontecer uma cascata caso haja partes dependentes no codigo.
