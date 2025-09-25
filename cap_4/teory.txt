@@ -1,0 +1,21 @@
+1. Laços e Indentação: No trecho de código abaixo, qual linha será executada apenas uma vez e por quê? Explique brevemente a importância da indentação para o Python.
+
+print("Pizza é a minha comida favorita!"). Diferente de outras linguagens, em Python, a identação tem um efeito de máquina também, ela é usada para o interpretador saber onde você quer abrir ou não um bloco de código referente a uma instrução, como um for ou um if.
+
+2. range() e List Comprehension: Qual seria o resultado da expressão list(range(1, 6))? Em seguida, explique o que é uma list comprehension (abrangência de lista) e transforme o seguinte laço for em uma única linha usando essa técnica:
+
+Range é uma unção built in que cria um objeto iteravel rápido, leve e não persistente. O codigo list(range(1,6)) primeiro resolve a expressão interna range(1,6) que cria o objeto já cítado, com um iterável de números que vai de 1 até 5 (o útlimo é excluido), e a função list de fora transforma esse iterável em uma lista da linguagem. List Comprehesion e um atalho para criar variaveis que tomam o valor total de um for em uma unica expressão quadrados = [quadrados.append(valor**2) for in range(1,6)]
+(Observação: Explicação conceitual excelente! A sintaxe correta da list comprehension seria quadrados = [valor**2 for valor in range(1, 6)].)
+
+3. Fatiamento e Cópia de Listas: Dada a lista jogadores = ['ana', 'bia', 'caio', 'duda', 'eli'], qual código você usaria para obter uma fatia (slice) contendo apenas os três primeiros jogadores? E qual é a maneira correta de criar uma cópia completa e independente dessa lista em uma nova variável chamada copia_jogadores?
+
+podio = jogadores[:3]. Segundo o livro seria new_jogadores = jogadores[:]
+
+4. Tuplas: O que é uma tupla e qual é a sua principal diferença em relação a uma lista? Como você declararia uma tupla com as dimensões de um retângulo (largura e altura) de 200 por 50 pixels?
+
+Tupla e um tipo de dado nativo que se assemelha em comportamento a uma lista, contudo ela e inalteravel, nao podendo ter sua estrutura interna alterada, apenas substituida. square = (200,50)
+
+5. Estilo de Código (PEP 8): O capítulo menciona o guia de estilo PEP 8. Cite duas recomendações de estilo que o livro destaca para escrever um código Python mais limpo e legível.
+
+4 espaços para identação e convenção de nomes.
+(Observação: "4 espaços" está correto. As outras recomendações destacadas no capítulo foram "limite de tamanho de linha" e "uso de linhas em branco".)
