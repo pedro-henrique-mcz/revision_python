@@ -1,0 +1,20 @@
+1. Qual é a diferença fundamental entre o operador = (um sinal de igual) e o operador == (dois sinais de igual) em Python? Como você verificaria se uma variável nome_usuario = 'Admin' é igual à string 'admin' sem se preocupar com a diferença entre letras maiúsculas e minúsculas?
+
+Um e o sinal de atribuicao e o outro e um operador logico de igualdade. Usando a função lower() em ambos os lados.
+
+2. Explique a principal diferença de comportamento entre usar uma cadeia if-elif-else e usar uma série de instruções if independentes. Em que situação você escolheria usar uma série de ifs em vez de if-elif-else?
+
+Uma cadeia de if-elif-else forma um switch de decisões para cada opção, com isso, uma e somente uma coisa pode acontecer, já emuma seuqencia de ifs, multiplas opções podem ser usadas.
+
+3. Dada a lista usuarios_banidos = ['joao', 'maria', 'pedro'], como você escreveria uma instrução if para verificar se um novo_usuario = 'ana' não está na lista de banidos?
+
+if 'ana' in usuarios_banidos
+(Observação: A resposta correta para verificar se não está na lista seria if 'ana' not in usuarios_banidos:.)
+
+4. Como o Python avalia uma lista vazia em um teste condicional (por exemplo, if minha_lista_vazia:)? O código dentro desse bloco if seria executado ou ignorado?
+
+Avalia como um valor falso e o bloco de codigo da instrucao if n seria executado.
+
+5. Qual é a diferença entre os operadores lógicos and e or ao testar múltiplas condições? Se a condição idade > 18 for False e a condição possui_ingresso for True, qual será o resultado de if idade > 18 and possui_ingresso: e de if idade > 18 or possui_ingresso:?
+
+and e or sao os operadores logicos usados em expressoes booleandas, and diz que todas as expressoes que ele conectam devem ser verdade para que o bloco de codigo seja executado e or fala que apenas um precisa ser verdade para que o bloco de codigfo seja executado.
