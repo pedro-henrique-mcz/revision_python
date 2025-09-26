@@ -1,0 +1,20 @@
+1. Qual é a função do método especial __init__() em uma classe? E o que o parâmetro self representa dentro dos métodos de uma classe?
+
+O método especial __init__() é o construtor da classe, é ele quem recebe os argumentos e cria as instáncias dos objetos. Self é uma referencia ao objetos futuramente instanciados pela classe.
+
+2. Explique a diferença entre um atributo e um método em uma classe. Dê um exemplo de cada um para uma classe Carro.
+
+Atributo é uma variável ligada a um objeto, um método é uma função ligada a um objeto. Um bom exemplo seria o atirbuto rodas, e a o método curva.
+
+3. O que é herança (inheritance) na programação orientada a objetos? Se você tem uma classe CarroEletrico que herda da classe Carro, o que a função super().__init__() faz dentro do método __init__() da classe filha (CarroEletrico)?
+
+Herança é um paradigma de POO que se refere ao compartamento de objetos herdarem metodos e atributos de outros objetos. Se usarmos a classe super().__init__() dentro da construtora de uma classe herdeira, ela irá 'copiar' a classe construtora pai, ou seja, os mesmo argumentos que seriam utilizados no construtor da classe pai, agora ser'ao na filha.
+
+4. O capítulo descreve três maneiras de modificar o valor de um atributo de uma instância (por exemplo, o hodometro de um carro). Cite duas dessas maneiras.
+
+Atraves da notação de ponto, atraves de métodos de acesso, ou de métodos de adição.
+
+5. Se você salvou a classe Carro em um arquivo chamado carro.py, qual é o comando para importar apenas essa classe para outro arquivo? E como você criaria uma instância dessa classe após importá-la?
+
+from carros import Carro, carro = Carro()
+(Observação: A sintaxe correta para importar do arquivo carro.py seria from carro import Carro.)

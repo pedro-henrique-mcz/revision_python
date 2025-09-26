@@ -1,0 +1,21 @@
+1. Explique a diferença entre um parâmetro e um argumento de uma função. Além disso, qual é a diferença entre um argumento posicional e um argumento nomeado (keyword argument)?
+
+Parametro é a definição ou assinatura da função, e oq esperamos nas chamadas da função, já um argumento é o que efetivamente envamos na chamada de uma funçao. Um argumento posicional é quando so colocamos o dado na chamada da função obdecendo uma sequencia de dados na assinatura da função, um argumento nomeado por outro lado é uma etiqueta que colocamos nas chamadas da função para indicar qual dado estamos efeitivamnte enviando para a função trabalhar.
+
+2. O que a instrução return faz em uma função? Por que muitas vezes é mais útil ter uma função que retorna um valor em vez de uma que apenas exibe (print) o resultado na tela?
+
+O valor return é o valor que a função retorna ao ser chamada, é efetivamente melhor teros função com return do que funções com efeitos colaterais porque é uma boa prática em geral tem uam função que retorne um valor e faça parte de uim ecosistema do que uma que atue sozinha.
+
+3. Qual é a sintaxe que você pode usar na chamada da função para passar uma cópia da lista, garantindo que a lista original não seja alterada?
+
+Passa um slice que funcionaria como uma copia da lista, não é muito indicado e é raro.
+(Observação: A sintaxe está correta! Na verdade, essa técnica (lista[:]) é a maneira indicada e comum justamente para essa finalidade: proteger a lista original de modificações.)
+
+4. O que os prefixos * (ex: *ingredientes) e ** (ex: **info_usuario) fazem quando colocados antes de um nome de parâmetro na definição de uma função? Em que tipo de dado cada um deles armazena os argumentos recebidos?
+
+Isso funciona como um indicador de dados arbritarios, quando podemos receber n argumentos. Quando colocamos *arg, os daods recebidos aqui serão recebidos pela função no formado de uma tupla, já em **args, os dados serão recebidos como um dic com chave valor.
+
+5. O que é um módulo em Python? Se você tem um módulo salvo como funcoes_pizza.py com uma função fazer_pizza(), qual seria o comando para importar o módulo inteiro usando o alias fp? E como você chamaria a função fazer_pizza() depois de importá-la dessa maneira?
+
+Um modulo python é uma estrutura que representa um codigo python que deve ser executado. Import funcoes_pizza.py as fp fp.fazer_pizza()
+(Observação: A sintaxe correta para importar, sem a extensão .py, seria import funcoes_pizza as fp.)
